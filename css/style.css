@@ -1,8 +1,10 @@
 body{
-  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  font-family: 'Titillium Web';font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
   padding:0;
   margin:0;
-  background-color:#f4f4f4;
+  background-color:#ffffff;
 }
 
 /* Global */
@@ -19,7 +21,7 @@ ul{
 
 .button_1{
   height:38px;
-  background:#e8491d;
+  background:#000000;
   border:0;
   padding-left: 20px;
   padding-right:20px;
@@ -29,18 +31,18 @@ ul{
 .dark{
   padding:15px;
   background:#35424a;
-  color:#ffffff;
+  color:#000000;
   margin-top:10px;
   margin-bottom:10px;
 }
 
 /* Header **/
 header{
-  background:#35424a;
+  background:#000000;
   color:#ffffff;
   padding-top:30px;
   min-height:70px;
-  border-bottom:#e8491d 3px solid;
+  border-bottom:#ffffff 3px solid;
 }
 
 header a{
@@ -70,7 +72,7 @@ header nav{
 }
 
 header .highlight, header .current a{
-  color:#e8491d;
+  color:#ffffff;
   font-weight:bold;
 }
 
@@ -84,24 +86,24 @@ header a:hover{
   min-height:400px;
   background:url('../img/showcase.jpg') no-repeat 0 -400px;
   text-align:center;
-  color:#ffffff;
+  color:#000000;
 }
 
 #showcase h1{
   margin-top:100px;
-  font-size:55px;
+  font-size:35px;
   margin-bottom:10px;
 }
 
 #showcase p{
-  font-size:20px;
+  font-size:25px;
 }
 
 /* Newsletter */
 #newsletter{
   padding:15px;
   color:#ffffff;
-  background:#35424a
+  background:#000000
 }
 
 #newsletter h1{
@@ -154,6 +156,10 @@ article#main-col{
 }
 
 /* Services */
+body {
+  font-family: 'Titillium Web';
+}
+
 ul#services li{
   list-style: none;
   padding:20px;
@@ -166,7 +172,7 @@ footer{
   padding:20px;
   margin-top:20px;
   color:#ffffff;
-  background-color:#e8491d;
+  background-color:#000000;
   text-align: center;
 }
 
@@ -202,4 +208,9 @@ footer{
     width:100%;
     margin-bottom:5px;
   }
+}
+
+*
+{
+   font-family: 'Titillium Web' !important;
 }
