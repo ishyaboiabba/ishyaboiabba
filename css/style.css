@@ -39,7 +39,6 @@ ul{
 /* Header **/
 header{
   background:#000000;
-  color:#ffffff;
   padding-top:30px;
   min-height:70px;
   border-bottom:#ffffff 3px solid;
@@ -83,16 +82,16 @@ header a:hover{
 
 /* Showcase */
 #showcase{
-  min-height:400px;
-  background:url('../img/showcase.jpg') no-repeat 0 -400px;
+  background:url('../img/logolead.png') ;
   text-align:center;
   color:#000000;
 }
 
-#showcase h1{
-  margin-top:100px;
+#showcase {
+  margin-top:10px;
   font-size:35px;
-  margin-bottom:10px;
+  margin-bottom:0px;
+  margin-left:0px;
 }
 
 #showcase p{
@@ -106,7 +105,7 @@ header a:hover{
   background:#000000
 }
 
-#newsletter h1{
+#newsletter {
   float:left;
 }
 
@@ -138,19 +137,19 @@ header a:hover{
 }
 
 /* Sidebar */
-aside#sidebar{
+#sidebar{
   float:right;
   width:30%;
   margin-top:10px;
 }
 
-aside#sidebar .quote input, aside#sidebar .quote textarea{
+#sidebar .quote input, #sidebar .quote textarea{
   width:90%;
   padding:5px;
 }
 
 /* Main-col */
-article#main-col{
+#main-col{
   float:left;
   width:65%;
 }
@@ -160,7 +159,7 @@ body {
   font-family: 'Titillium Web';
 }
 
-ul#services li{
+#services li{
   list-style: none;
   padding:20px;
   border: #cccccc solid 1px;
@@ -181,11 +180,11 @@ footer{
   header #branding,
   header nav,
   header nav li,
-  #newsletter h1,
+  #newsletter ,
   #newsletter form,
   #boxes .box,
-  article#main-col,
-  aside#sidebar{
+  #main-col,
+  #sidebar{
     float:none;
     text-align:center;
     width:100%;
@@ -195,7 +194,7 @@ footer{
     padding-bottom:20px;
   }
 
-  #showcase h1{
+  #showcase {
     margin-top:40px;
   }
 
@@ -210,7 +209,3 @@ footer{
   }
 }
 
-*
-{
-   font-family: 'Titillium Web' !important;
-}
