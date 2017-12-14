@@ -117,7 +117,7 @@ header a:hover{
 #newsletter input[type="email"]{
   padding:4px;
   height:25px;
-  width:250px;
+  width:699px;
 }
 
 /* Boxes */
@@ -181,6 +181,7 @@ footer{
   header nav,
   header nav li,
   #newsletter ,
+  #newsletter input,
   #newsletter form,
   #boxes .box,
   #main-col,
