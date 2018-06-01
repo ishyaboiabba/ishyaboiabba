@@ -1,0 +1,65 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Processing Demo</title>
+<script type="text/javascript" src="img/process.js"></script>
+</head>
+<body>
+<script type="text/processing">
+
+PImage background; PImage ship;
+
+int count = 0;
+int gamestate = 0;
+int y = 0; int Vy = 0;
+
+void setup(){
+  size(800, 600);
+  ship = loadImage("./Images/imagesfinall.png");
+  background = loadImage("./Images/game-background.png");
+}
+
+void draw(){
+  if (gamestate == 0){
+    image(background, count, 0);
+    image(background, width + count, 0);
+    count -= 2;
+    if (count == - width){
+      count = 0;
+    }
+    
+    image(ship, 200, y);
+    Vy += 1;
+    y = y + Vy;
+    
+    if (count%2 == 0){
+      Vy += 1;
+    }
+    
+    y = y + Vy;
+  }
+  
+  if (y < -40 || y > 600){
+    gamestate = 1;
+  }
+  
+  if (gamestate == 1){
+    background(255, 0, 0);
+    textSize(50);
+    text("Restart", 200, 300);
+      if (mousePressed){
+        gamestate = 0;
+      }
+    
+  }
+}
+
+void mousePressed(){
+  Vy = -20;
+}
+
+</script>
+<canvas id="sketch" style="border: 1px solid black;"></canvas>
+</body>
+</html>
